@@ -69,10 +69,11 @@ namespace Shokofin.API
             }
             mediaFolder = parent;
             while (!mediaFolder.ParentId.Equals(root.Id)) {
-                if (mediaFolder.Parent == null) {
+                if (mediaFolder.FindParent<Folder>() == null)
+                {
                     break;
                 }
-                mediaFolder = mediaFolder.Parent;
+                mediaFolder = mediaFolder.FindParent<Folder>();
             }
             MediaFolderList.Add(mediaFolder);
             return mediaFolder;
@@ -96,10 +97,10 @@ namespace Shokofin.API
             // Look for the root folder for the current item.
             var root = LibraryManager.RootFolder;
             while (!mediaFolder.ParentId.Equals(root.Id)) {
-                if (mediaFolder.Parent == null) {
+                if (mediaFolder.FindParent<Folder>() == null) {
                     break;
                 }
-                mediaFolder = mediaFolder.Parent;
+                mediaFolder = mediaFolder.FindParent<Folder>();
             }
             MediaFolderList.Add(mediaFolder);
             return fullPath.Substring(mediaFolder.Path.Length);

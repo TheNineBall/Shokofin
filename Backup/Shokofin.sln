@@ -1,8 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32319.34
-MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shokofin", "Shokofin\Shokofin.csproj", "{1DD876AE-9E68-4867-BDF6-B9050E63E936}"
 EndProject
 Global
@@ -15,11 +12,5 @@ Global
 		{1DD876AE-9E68-4867-BDF6-B9050E63E936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DD876AE-9E68-4867-BDF6-B9050E63E936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DD876AE-9E68-4867-BDF6-B9050E63E936}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B9F58350-703F-4100-8027-8F9B39F20E98}
 	EndGlobalSection
 EndGlobal

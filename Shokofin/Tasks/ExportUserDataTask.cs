@@ -50,6 +50,12 @@ namespace Shokofin.Tasks
             await _userSyncManager.ScanAndSync(SyncDirection.Export, progress, cancellationToken);
         }
 
+        public Task ExecuteAsync(IProgress<double> progress, CancellationToken cancellationToken)
+        {
+            //TODO
+            return new Task(async () => _userSyncManager.ScanAndSync(SyncDirection.Export, progress, cancellationToken));
+        }
+
         /// <inheritdoc />
         public string Name => "Export User Data";
 
